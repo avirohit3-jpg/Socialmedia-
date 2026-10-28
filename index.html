@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>socialmedia — Connect & Create</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">s</span> socialmedia</a>
+  <input id="search" class="search" placeholder="Search creators..." aria-label="Search creators">
+  <div class="top-actions"><button id="openLogin" class="btn btn-light">Log in</button><button id="openSignup" class="btn btn-primary">Sign up</button></div>
+  <div id="userBadge" class="user-badge hidden"></div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <button class="nav active" data-view="feed">⌂ <span>Home Feed</span></button>
+    <button class="nav" data-view="reels">▶ <span>Reels</span></button>
+    <button class="nav" data-view="messages">✉ <span>Messages</span></button>
+    <button class="nav" data-view="collabs">✦ <span>Brand Collabs</span></button>
+    <button class="nav" data-view="profile">◉ <span>My Profile</span></button>
+    <div class="sidebar-note"><b>Creator corner</b><p>Post your work, grow your audience and discover brand opportunities.</p><button class="btn btn-primary full" id="sideCreate">＋ Create post</button></div>
+    <small>Demo website · socialmedia</small>
+  </aside>
+  <main id="main" class="main"></main>
+  <aside class="rightbar">
+    <div class="panel"><div class="panel-title">Suggested creators</div><div id="suggestions"></div></div>
+    <div class="panel creator-panel"><div class="panel-title">Creator tools</div><p>Build your profile and share consistent content to attract brands.</p><button class="btn btn-light full" data-jump="collabs">Explore collabs</button></div>
+    <div class="footer-links">About · Help · Privacy · Terms<br><span>© 2026 socialmedia</span></div>
+  </aside>
+</div>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card"><button class="close" id="closeModal" aria-label="Close">×</button><div id="modalBody"></div></div></div>
+<div id="toast" class="toast hidden"></div>
+<script src="app.js"></script>
+</body></html>
